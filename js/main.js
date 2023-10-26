@@ -12,7 +12,7 @@ const createTarotCard=(container, id, isReverse)=>{
     new_card.classList.add("tarot-card")
     if(isReverse) new_card.classList.add("reverse")
 
-    new_card.innerHTML =`<div class="front" style='background-image: url(../images/${id}.jpg)'></div>
+    new_card.innerHTML =`<div class="front" style='background-image: url(./images/${id}.jpg)'></div>
                         <div class="back"></div>
                         <button class="info-btn" onclick="handleInfo(this,${id},true)">check it</button>
                         `
@@ -24,7 +24,7 @@ const createTarotCard=(container, id, isReverse)=>{
 const createInfo =(container, id, data)=>{
     const tarot = data[id]
     let content =  `<div class="tarot-info-header">
-                        <div class="tarot-info-img" style='background-image: url(../images/${id}.jpg)'></div>
+                        <div class="tarot-info-img" style='background-image: url(./images/${id}.jpg)'></div>
                         <h2>${tarot.name}</h2>
                     </div>
                     <div class="tarot-info-content">
